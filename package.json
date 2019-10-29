@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "./node_modules/.bin/nodemon --watch src --ext js,graphql --exec babel-node  src/index.js",
     "build": "babel src -d build; cp src/schema.graphql build",
-    "seed": "babel-node src/seed/seed-db.js"
+    "seed": "babel-node src/seed/seed-db.js",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
   },
   "author": "Gissy",
   "license": "MIT",
@@ -29,18 +30,25 @@
     "@babel/node": "^7.6.3",
     "@babel/plugin-proposal-optional-chaining": "^7.6.0",
     "@babel/preset-env": "^7.6.3",
+    "@dennisvash/eslint-config": "1.1.0",
+    "@dennisvash/prettier-config": "^1.0.0",
+    "babel-eslint": "^10.x.x",
+    "eslint": "^5.x.x",
+    "eslint-config-prettier": "^4.x.x",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "prettier": "^1.x.x",
+    "pretty-quick": "^2.0.0"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "pretty-quick --staged && lint-staged"
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md,graphql": [
-      "prettier --write",
+    "*.js": [
+      "eslint --fix",
       "git add"
     ]
   }

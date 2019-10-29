@@ -1,22 +1,22 @@
 {
-    "version": 2,
-    "name": "core",
-    "builds": [
-        {
-            "src": "src/index.js",
-            "use": "@now/node-server"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/graphql(.*)",
-            "dest": "src/index.js"
-        }
-    ],
-    "env": {
-        "REACT_APP_GRAPHQL_URI": "/graphql",
-        "NEO4J_URI": "@neo4j_uri",
-        "NEO4J_USER": "@neo4j_user",
-        "NEO4J_PASSWORD": "@neo4j_password"
+  "version": 2,
+  "name": "core",
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@now/node-server"
     }
+  ],
+  "routes": [
+    {
+      "src": "/graphql(.*)",
+      "dest": "src/index.js"
+    }
+  ],
+  "env": {
+    "REACT_APP_GRAPHQL_URI": "/graphql",
+    "NEO4J_URI": "@neo4j_uri",
+    "NEO4J_USER": "@neo4j_user",
+    "NEO4J_PASSWORD": "@neo4j_password"
+  }
 }

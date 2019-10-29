@@ -1,0 +1,7 @@
+{
+  "extends": "@dennisvash",
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

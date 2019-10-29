@@ -19,7 +19,7 @@ const app = express();
  */
 
 const schema = makeAugmentedSchema({
-  typeDefs
+  typeDefs,
 });
 
 /*
@@ -29,7 +29,7 @@ const schema = makeAugmentedSchema({
  */
 const driver = neo4j.driver(
   process.env.NEO4J_URI || 'bolt://localhost:7687',
-  neo4j.auth.basic(process.env.NEO4J_USER || 'neo4j', process.env.NEO4J_PASSWORD || 'neo4j')
+  neo4j.auth.basic(process.env.NEO4J_USER || 'neo4j', process.env.NEO4J_PASSWORD || 'neo4j'),
 );
 
 /*
@@ -42,7 +42,7 @@ const server = new ApolloServer({
   context: { driver },
   schema: schema,
   introspection: true,
-  playground: true
+  playground: true,
 });
 
 // Specify port and path for GraphQL endpoint
@@ -56,5 +56,6 @@ const path = '/graphql';
 server.applyMiddleware({ app, path });
 
 app.listen({ port, path }, () => {
+  // eslint-disable-next-line
   console.log(`GraphQL server ready at http://localhost:${port}${path}`);
 });
