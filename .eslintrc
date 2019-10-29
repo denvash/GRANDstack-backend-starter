@@ -4,4 +4,9 @@
     "browser": true,
     "node": true
   }
+  // Add for console logs
+  //,
+  // "rules": {
+  //   "no-console": "off"
+  // }
 }
