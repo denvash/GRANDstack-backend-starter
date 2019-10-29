@@ -6,6 +6,7 @@
 
 - [Project Info](https://docs.google.com/document/d/13jBvjWZJGnerSwUwTJ4TDnX-6lxB2-N4us-v--1UHHo/edit?usp=sharing)
 - Bootstrapped from [`grand-stack-stater`](https://github.com/grand-stack/grand-stack-starter)
+- [Figma Drafts](https://www.figma.com/file/D9wmoj9rx7prAYEhUZDoJY/Gissy?node-id=0%3A1)
 
 ## Deployments
 
