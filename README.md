@@ -11,7 +11,7 @@
 ## Deployments
 
 - [Neo4j](https://10-0-1-104-35408.neo4jsandbox.com/browser/)
-- [GraphQL Server](https://core.dennisvash.now.sh/graphql)
+- [GraphQL Server](https://core.gissy.now.sh/graphql)
 - [△ now](https://zeit.co/gissy)
 
 ## Quick Start
