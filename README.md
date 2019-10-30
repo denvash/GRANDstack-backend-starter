@@ -1,10 +1,4 @@
-<h1 align="center">
-
-<img src="https://grandstack.io/img/GrandStack-Logo-SiteIcon-512x512.png"  alt="3dLogo" style="width: 30vw;">
-
-[GRAND-Stack Backend Starter](https://grandstack.io/)
-
-</h1>
+# [GRAND-Stack Backend Starter](https://grandstack.io/)
 
 ![GRANDstack](https://grandstack.io/docs/assets/img/grandstack_architecture.png)
 
