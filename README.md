@@ -43,7 +43,7 @@ Follow the official [GRANDstack Starter guide](https://grandstack.io/docs/gettin
    Add secrets for Neo4j instance:
 
    ```sh
-   now secret add neo4j_uri bolt+routing://<YOUR_NEO4J_INSTANCE_HERE>
+   now secret add neo4j_uri bolt://<YOUR_NEO4J_INSTANCE_HERE>
    now secret add neo4j_user <YOUR_DATABASE_USERNAME_HERE>
    now secret add neo4j_password <YOUR_DATABASE_USER_PASSWORD_HERE>
    ```
