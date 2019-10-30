@@ -11,11 +11,9 @@
 
 ## Usage
 
-Follow the official [GRANDstack Starter guide](https://grandstack.io/docs/getting-started-grand-stack-starter.html) for configuring Neo4j instance.
+Follow the official [GRANDstack Starter guide](https://grandstack.io/docs/getting-started-grand-stack-starter.html) for configuring Neo4j instance, you should also check the [Tutorial video](https://www.youtube.com/watch?v=rPC71lUhK_I).
 
-> [Tutorial video](https://www.youtube.com/watch?v=rPC71lUhK_I).
-
-> **TL;DR**: Initialize an instance and edit `.env` file, add secrets to `now` for deployment.
+> **TL;DR**: Initialize a DB instance and edit `.env` file, add secrets to `now` for deployment.
 
 [![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/social-gissy-network/core&env=NEO4J_USER&env=NEO4J_URI&env=NEO4J_PASSWORD)
 
