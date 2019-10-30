@@ -1,20 +1,29 @@
 <h1 align="center">
 
-<img src=".github/Banner.svg" alt="3dLogo" style="width: 50vw;">
+<img src="https://grandstack.io/img/GrandStack-Logo-SiteIcon-512x512.png"  alt="3dLogo" style="width: 30vw;">
+
+[GRAND-Stack Backend Starter](https://grandstack.io/)
 
 </h1>
 
-- [Project Info](https://docs.google.com/document/d/13jBvjWZJGnerSwUwTJ4TDnX-6lxB2-N4us-v--1UHHo/edit?usp=sharing)
-- Bootstrapped from [`grand-stack-stater`](https://github.com/grand-stack/grand-stack-starter)
-- [Figma Drafts](https://www.figma.com/file/D9wmoj9rx7prAYEhUZDoJY/Gissy?node-id=0%3A1)
+![GRANDstack](https://grandstack.io/docs/assets/img/grandstack_architecture.png)
 
-## Deployments
+## Features
 
-- [Neo4j](https://10-0-1-104-35408.neo4jsandbox.com/browser/)
-- [GraphQL Server](https://core.gissy.now.sh/graphql)
-- [△ now](https://zeit.co/gissy)
+- Backend as micro-service.
+- Empowered version of [`grand-stack-stater`](https://github.com/grand-stack/grand-stack-starter) (`/api`)
+- Linters - eslint & prettier configured
+- Optional-Chaining
 
-## Quick Start
+## Usage
+
+Follow the official [GRANDstack Starter guide](https://grandstack.io/docs/getting-started-grand-stack-starter.html) for configuring Neo4j instance.
+
+> [Tutorial video](https://www.youtube.com/watch?v=rPC71lUhK_I).
+
+> **TL;DR**: Initialize an instance and edit `.env` file, add secrets to `now` for deployment.
+
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/social-gissy-network/core&env=NEO4J_USER&env=NEO4J_URI&env=NEO4J_PASSWORD)
 
 1. Install Dependencies
 
@@ -35,7 +44,18 @@
    ```sh
    npm i -g now
    now login
-   now
    ```
 
-   [![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/social-gissy-network/core&env=NEO4J_USER&env=NEO4J_URI&env=NEO4J_PASSWORD)
+   Add secrets for Neo4j instance:
+
+   ```sh
+   now secret add neo4j_uri bolt+routing://<YOUR_NEO4J_INSTANCE_HERE>
+   now secret add neo4j_user <YOUR_DATABASE_USERNAME_HERE>
+   now secret add neo4j_password <YOUR_DATABASE_USER_PASSWORD_HERE>
+   ```
+
+   [Integrate with Github](https://zeit.co/github) and deploy:
+
+   ```sh
+   now
+   ```
