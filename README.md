@@ -6,7 +6,7 @@
 
 - Backend as micro-service.
 - Empowered version of [`grand-stack-stater`](https://github.com/grand-stack/grand-stack-starter) (`/api`)
-- Linters - eslint & prettier configured
+- Linters - `eslint` & `prettier` configured
 - Optional-Chaining
 
 ## Usage
